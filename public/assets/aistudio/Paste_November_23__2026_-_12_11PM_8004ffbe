@@ -1,0 +1,1092 @@
+KHAROS — THE HOLLOW RUN
+
+MAJOR GAMEPLAY, WORLD, ANIMATION & IMMERSION OVERHAUL
+
+Act as a senior AAA game developer, gameplay engineer, level designer, animation director, technical artist, AI engineer, and performance optimization specialist.
+
+Your task is to significantly upgrade the existing KHAROS — THE HOLLOW RUN game into a premium, polished, Temple Run-inspired endless runner with better gameplay mechanics, immersive environments, intelligent obstacle design, responsive controls, beautiful world scenery, wildlife, and high-quality character animation.
+
+IMPORTANT: This is an upgrade to an existing working project. Do not unnecessarily rebuild the game from scratch.
+
+==================================================
+
+1. FIRST — AUDIT THE EXISTING PROJECT
+   ==================================================
+
+Before making changes:
+
+- Inspect the complete existing game architecture.
+- Understand the existing movement system.
+- Understand the track/path generation system.
+- Inspect the campaign and its 20 existing levels.
+- Inspect Endless Mode.
+- Inspect obstacle spawning and collision logic.
+- Inspect the character model, rig, animation system and materials.
+- Inspect camera logic.
+- Inspect environment and scenery systems.
+- Inspect UI, progression, coins, rewards and unlock systems.
+- Inspect audio implementation.
+- Identify broken, incomplete, placeholder, or poorly implemented gameplay systems.
+
+Do not blindly replace existing systems.
+
+Reuse and improve existing architecture wherever possible.
+
+Preserve all working features.
+
+==================================================
+2. CAMPAIGN — PRESERVE ALL 20 EXISTING LEVELS
+
+CRITICAL REQUIREMENT:
+
+There are 20 existing campaign levels.
+
+DO NOT DELETE THEM.
+DO NOT REPLACE THEM.
+DO NOT REDESIGN THEM INTO DIFFERENT LEVELS.
+DO NOT REMOVE THEIR ENVIRONMENTS OR IDENTITY.
+DO NOT CHANGE THEIR PROGRESSION OR UNLOCK STRUCTURE.
+
+Preserve all 20 levels and their original identity.
+
+Upgrade gameplay WITHIN the existing levels:
+
+- Improve track layouts.
+- Improve path variety.
+- Add genuine lane-switching opportunities.
+- Add jumps, slides, turns and dodging.
+- Introduce skill-based obstacle combinations.
+- Improve environmental scenery.
+- Add better route choices.
+- Improve obstacle placement and timing.
+- Introduce carefully designed track segments.
+- Improve transitions between different parts of the same level.
+- Make each level feel more engaging, playable and polished.
+
+Every level should retain its recognizable environment and overall identity while receiving gameplay improvements.
+
+Campaign levels must remain handcrafted experiences, not endless randomly generated tracks.
+
+==================================================
+3. ENDLESS MODE — TRUE PROCEDURAL ENDLESS RUNNER
+
+Endless Mode must be completely separate from campaign level progression.
+
+Create a genuinely endless experience.
+
+The player must be able to continue running indefinitely until they fail.
+
+Implement a modular procedural track-generation system that continuously generates connected track segments.
+
+The track must never reach a predetermined ending.
+
+Generate track sections dynamically and intelligently, including:
+
+- Straight paths.
+- Gentle curves.
+- Sharp turns.
+- Left turns.
+- Right turns.
+- S-curves.
+- Branching paths.
+- Narrow walkways.
+- Temple corridors.
+- Bridges.
+- Broken bridges.
+- Cliffside paths.
+- Elevated routes.
+- Underground routes.
+- Water crossings.
+- Collapsing sections.
+- Ancient ruins.
+- Multiple route options.
+- Smoothly connected track segments.
+
+Maintain continuity between generated segments.
+
+Never allow:
+
+- Track gaps caused by generation errors.
+- Overlapping segments.
+- Sudden teleportation.
+- Impossible path geometry.
+- Camera snapping.
+- Unconnected branches.
+- Abrupt direction changes without proper transitions.
+
+Endless Mode must feel like a real adventure that continuously evolves.
+
+==================================================
+4. CORE RUNNER GAMEPLAY
+
+Create a responsive and polished runner gameplay loop:
+
+RUN → SWITCH LANES → JUMP → SLIDE → DODGE → CHOOSE ROUTE → TURN → ENTER NEW ENVIRONMENT → INCREASE DIFFICULTY
+
+The player must be able to:
+
+- Move between left, center and right lanes.
+- Swipe left.
+- Swipe right.
+- Jump.
+- Slide or crouch.
+- Avoid obstacles.
+- Choose branching routes.
+- Navigate curves and turns.
+- Collect coins.
+- Perform quick consecutive actions.
+- React to increasingly complex challenges.
+
+Controls must be responsive and predictable.
+
+==================================================
+5. THREE-LANE MOVEMENT SYSTEM
+
+Implement a proper three-lane runner system.
+
+LANES:
+
+- LEFT
+- CENTER
+- RIGHT
+
+SWIPE CONTROLS:
+
+Swipe Left:
+Move one lane to the left.
+
+Swipe Right:
+Move one lane to the right.
+
+Swipe Up:
+Jump.
+
+Swipe Down:
+Slide or crouch.
+
+Lane changes must feel natural and physically believable.
+
+Do not instantly teleport the character between lanes.
+
+Implement:
+
+- Smooth lateral acceleration.
+- Natural body leaning.
+- Proper foot movement.
+- Balance correction.
+- Controlled lane-transition animation.
+- Appropriate transition duration.
+- Smooth return to running posture.
+
+Movement must remain responsive even when the game speed increases.
+
+Do not introduce input delays that make the controls feel sluggish.
+
+==================================================
+6. REAL BRANCHING PATH SYSTEM
+
+Create genuine path choices.
+
+When a fork appears, the player must be able to choose:
+
+- LEFT ROUTE
+- CENTER ROUTE
+- RIGHT ROUTE
+
+The routes must contain actual connected track geometry.
+
+Branching paths must not be decorative.
+
+Different routes can contain:
+
+- Different obstacles.
+- Different difficulty.
+- Different coin opportunities.
+- Different scenery.
+- Different environmental experiences.
+- Different risk/reward opportunities.
+- Different track shapes.
+
+Some routes can be easier but offer fewer rewards.
+
+Some routes can be dangerous but contain more coins.
+
+The selected path must actually affect the gameplay experience.
+
+Branches must smoothly merge where designed.
+
+Clearly show upcoming route choices before the player reaches them.
+
+Never create a branch that is impossible to select due to insufficient reaction time.
+
+==================================================
+7. TEMPLE RUN-STYLE TRACK DESIGN
+
+Design the gameplay tracks with the quality and variety expected from a premium endless runner.
+
+Use intelligent combinations of:
+
+- Straight sections.
+- Curved paths.
+- Sharp turns.
+- S-curves.
+- Forks.
+- Narrow paths.
+- Bridges.
+- Broken bridges.
+- Cliffside routes.
+- Elevated tracks.
+- Underground passages.
+- Ancient temples.
+- Ruined corridors.
+- Water crossings.
+- Collapsing paths.
+- Moving platforms.
+- Dangerous environmental sections.
+
+Track segments must connect naturally.
+
+The runner should constantly encounter new gameplay situations rather than running down the same straight corridor repeatedly.
+
+==================================================
+8. OBSTACLE SYSTEM — SKILL-BASED GAMEPLAY
+
+Completely improve the obstacle variety, placement and gameplay logic.
+
+Do not make the track feel like a simple road containing random boxes.
+
+Create obstacles that require different actions.
+
+JUMP OBSTACLES:
+
+- Fallen trees.
+- Low stone barriers.
+- Broken track sections.
+- Small gaps.
+- Pits.
+- Collapsed bridges.
+- Debris piles.
+- Dangerous floor sections.
+
+SLIDE OBSTACLES:
+
+- Low branches.
+- Horizontal beams.
+- Stone arches.
+- Hanging traps.
+- Low temple structures.
+- Dangerous overhead barriers.
+
+DODGE OBSTACLES:
+
+- Large rocks.
+- Boulders.
+- Fire.
+- Spikes.
+- Debris.
+- Moving stone blocks.
+- Dangerous structures.
+- Falling objects.
+
+ADVANCED OBSTACLES:
+
+- Swinging traps.
+- Rotating hazards.
+- Collapsing platforms.
+- Falling pillars.
+- Moving platforms.
+- Rolling objects.
+- Timed hazards.
+- Narrow passages.
+- Multiple obstacles requiring consecutive actions.
+
+Create challenging combinations such as:
+
+- Jump → lane switch.
+- Slide → lane switch.
+- Obstacle → immediate route selection.
+- Jump → landing → dodge.
+- Lane switch → jump → slide.
+- Fork → difficult obstacle → reward.
+- Moving hazard → safe lane → route choice.
+
+Obstacles must be visually readable and understandable before the player reaches them.
+
+==================================================
+9. OBSTACLE FAIRNESS & COLLISION VALIDATION
+
+Gameplay difficulty must come from skill, not unfair random generation.
+
+Every generated obstacle pattern must be validated.
+
+Never generate:
+
+- All three lanes blocked simultaneously without a viable solution.
+- Impossible obstacle combinations.
+- Obstacles appearing directly on the player.
+- Insufficient reaction time.
+- Unavoidable collision sequences.
+- Jump obstacles that cannot be cleared.
+- Slides that begin too late.
+- Incorrect collision boxes.
+- Obstacles that visually appear avoidable but are not.
+
+Calculate obstacle spacing based on:
+
+- Current player speed.
+- Player reaction time.
+- Lane-switch duration.
+- Jump duration.
+- Slide duration.
+- Obstacle collision dimensions.
+- Track geometry.
+
+Every obstacle pattern must have at least one mathematically valid solution.
+
+The player must be able to react fairly.
+
+==================================================
+10. JUMP, SLIDE & CHARACTER MOVEMENT ANIMATION
+
+Improve all movement animations.
+
+RUNNING:
+
+- Natural running cycle.
+- Proper arm swing.
+- Correct foot contact.
+- Body movement.
+- Hip movement.
+- Shoulder movement.
+- Natural forward momentum.
+
+JUMP:
+
+- Anticipation.
+- Proper takeoff.
+- Upward acceleration.
+- Airborne movement.
+- Natural body posture.
+- Controlled landing.
+- Landing recovery.
+
+SLIDE:
+
+- Fast and responsive crouching.
+- Natural body lowering.
+- Appropriate leg position.
+- Smooth entry and exit.
+- Proper momentum.
+
+LANE CHANGE:
+
+- Body lean.
+- Lateral footwork.
+- Natural weight transfer.
+- Smooth recovery.
+
+TURNING:
+
+- Lean into curves.
+- Adjust body posture.
+- Maintain proper direction.
+- Match animation to track geometry.
+
+NEAR MISS:
+
+- Small, natural reactive movement.
+- Appropriate balance adjustment.
+- Subtle facial or body reaction.
+
+COLLISION:
+
+- Physically believable stumble.
+- Proper loss of balance.
+- Natural impact reaction.
+- Appropriate recovery or death sequence.
+
+Avoid:
+
+- Lazy animations.
+- Stiff movement.
+- Excessive overacting.
+- Robotic movement.
+- Foot sliding.
+- Floating.
+- Snapping.
+- Unnatural body deformation.
+
+All animation must feel energetic, crisp, natural and properly timed.
+
+==================================================
+11. CHARACTER MODEL — COMPLETE VISUAL REBUILD IF NECESSARY
+
+The current player character appears incomplete or visually broken.
+
+Fix the character properly.
+
+Do not simply add superficial details to an inadequate model.
+
+If the current model, mesh, rig or materials are insufficient, rebuild or replace the character system properly.
+
+The character must have complete human anatomy:
+
+- Head.
+- Face.
+- Eyes.
+- Eyebrows.
+- Nose.
+- Mouth.
+- Ears.
+- Jaw.
+- Neck.
+- Complete torso.
+- Two complete arms.
+- Elbows.
+- Hands.
+- Fingers.
+- Complete legs.
+- Feet.
+- Natural skin.
+- Hair.
+
+Use believable human proportions and a premium adventure-runner character design.
+
+Create detailed:
+
+- Clothing.
+- Fabric materials.
+- Leather elements.
+- Metal accessories where appropriate.
+- Textures.
+- Skin materials.
+- Hair.
+- Shoes.
+- Character shading.
+
+The character must never appear:
+
+- Faceless.
+- Missing arms.
+- Missing skin.
+- Incomplete.
+- Broken.
+- Primitive.
+- Unnaturally proportioned.
+
+Maintain consistent appearance across:
+
+- Gameplay.
+- Character selection.
+- Shop.
+- Outfit selection.
+- Rewards.
+- Menus.
+- Preview screens.
+
+==================================================
+12. CAMERA SYSTEM
+
+Implement a premium third-person chase camera.
+
+The camera should:
+
+- Follow behind the runner.
+- Remain slightly elevated.
+- Show the full player character when practical.
+- Keep the upcoming track visible.
+- Allow the player to see upcoming obstacles.
+- Follow lane changes smoothly.
+- Follow route branches correctly.
+- Follow turns and curves naturally.
+- Smoothly adjust to changing track direction.
+- Maintain spatial continuity.
+
+Camera must never:
+
+- Snap abruptly.
+- Point toward the wrong branch.
+- Clip through terrain.
+- Obstruct upcoming obstacles.
+- Lose the character.
+- Cause disorientation.
+
+Use subtle camera feedback only where it enhances gameplay.
+
+==================================================
+13. SCENERY & ENVIRONMENTAL VARIATION
+
+Improve scenery variation throughout gameplay.
+
+CAMPAIGN:
+
+Preserve every level's original environmental identity.
+
+Enhance scenery within those environments through:
+
+- Vegetation.
+- Trees.
+- Rocks.
+- Ancient structures.
+- Ruins.
+- Water.
+- Rivers.
+- Waterfalls.
+- Environmental architecture.
+- Terrain variation.
+- Background landmarks.
+- Atmospheric depth.
+- Foreground, middle-ground and background scenery.
+
+Do not make all 20 levels look alike.
+
+Each existing campaign level should remain recognizable.
+
+ENDLESS:
+
+Introduce natural transitions between environmental sections.
+
+Use combinations of:
+
+- Forest.
+- Dense jungle.
+- Ancient temples.
+- Ruins.
+- Mountains.
+- Caves.
+- River environments.
+- Cliffside paths.
+- Grasslands.
+- Abandoned settlements.
+- Mysterious corrupted environments.
+
+Scenery must change naturally as the runner progresses.
+
+Avoid obvious repetition.
+
+Do not repeatedly place identical scenery objects in predictable patterns.
+
+==================================================
+14. DYNAMIC ENVIRONMENTAL EVENTS
+
+Introduce occasional environmental events to make runs memorable.
+
+Examples:
+
+- Birds suddenly flying from trees.
+- Dust moving across the path.
+- Leaves falling.
+- Water splashing.
+- Distant trees moving in wind.
+- Small rocks falling in the distance.
+- Temple structures visibly deteriorating.
+- Distant environmental movement.
+- Fog changing gradually.
+- Sunlight changing as the player enters different locations.
+- Water flowing beside the track.
+- Distant wildlife moving through the environment.
+
+Events must be carefully timed and optimized.
+
+Do not introduce environmental events that unfairly obscure upcoming obstacles.
+
+==================================================
+15. SPEED & DIFFICULTY PROGRESSION
+
+Difficulty should gradually increase.
+
+Increase difficulty through:
+
+- Speed.
+- Obstacle complexity.
+- Shorter but fair reaction windows.
+- More complex combinations.
+- More route choices.
+- Moving hazards.
+- Environmental challenges.
+- More demanding path transitions.
+
+Speed progression must be smooth.
+
+Do not suddenly increase speed in a way that makes gameplay unfair.
+
+Create a controlled difficulty curve.
+
+The player should feel:
+
+"I am getting better, and the game is getting more challenging."
+
+Not:
+
+"The game suddenly became impossible."
+
+==================================================
+16. LEVEL OPENING — THE HOLLOW CHASE CINEMATIC
+
+Every campaign level must have a short cinematic opening of approximately 2–4 seconds.
+
+The Hollow must visibly pursue the runner.
+
+The opening should:
+
+- Establish the environment.
+- Show the Hollow moving.
+- Show the runner escaping.
+- Create immediate danger.
+- Build excitement.
+- Transition naturally into gameplay.
+
+The Hollow must feel physically present and threatening.
+
+Do not simply show a static Hollow image.
+
+The Hollow should actually move and pursue the player.
+
+Design each opening according to the specific environment of that campaign level.
+
+Do not reuse an identical cinematic for all 20 levels.
+
+Maintain continuity between the opening cinematic and the gameplay camera.
+
+The transition must be smooth and natural.
+
+==================================================
+17. AUDIO & SOUND DESIGN
+
+Upgrade the audio experience.
+
+PLAYER SOUNDS:
+
+- Running breathing.
+- Jump exertion.
+- Landing sounds.
+- Hard landing sounds.
+- Slide exertion.
+- Near-miss reactions.
+- Stumble sounds.
+- Collision sounds.
+- Recovery breathing.
+- Death/fall sounds.
+
+FOOTSTEPS:
+
+Footsteps must adapt to the surface.
+
+Examples:
+
+- Stone.
+- Dirt.
+- Grass.
+- Wood.
+- Metal.
+- Water.
+- Sand.
+- Cave surfaces.
+
+Footsteps must synchronize with actual foot contact.
+
+ENVIRONMENT:
+
+Introduce appropriate environmental sounds:
+
+- Wind.
+- Birds.
+- Forest ambience.
+- Water.
+- Rivers.
+- Waterfalls.
+- Jungle ambience.
+- Distant animals.
+- Ruins ambience.
+- Cave atmosphere.
+- Environmental destruction where appropriate.
+
+HOLLOW:
+
+Create appropriate chase sounds.
+
+Use audio to communicate threat and proximity without becoming irritating.
+
+AUDIO QUALITY:
+
+- Correct synchronization.
+- Balanced volume.
+- Smooth transitions.
+- Variation.
+- No excessive repetition.
+- No audio spam.
+- No unnatural sound effects.
+
+==================================================
+18. LIVING WORLD — WILDLIFE, CREATURES & ENVIRONMENTAL LIFE
+
+Upgrade the environments surrounding the running paths so the world feels alive, beautiful, immersive and constantly evolving.
+
+IMPORTANT:
+
+Do not redesign or replace existing campaign environments.
+
+Integrate wildlife and vegetation naturally into the existing scenery.
+
+WILDLIFE:
+
+Add animated environmental wildlife throughout suitable locations:
+
+- Deer.
+- Tigers.
+- Cats.
+- Dogs.
+- Rabbits.
+- Pigeons.
+- Peacocks.
+- Sparrows.
+
+ANIMAL BEHAVIOR:
+
+DEER:
+
+- Grazing beside paths.
+- Standing near water.
+- Looking up when the runner approaches.
+- Naturally running away into vegetation.
+
+TIGERS:
+
+- Resting in distant jungle areas.
+- Walking naturally through background environments.
+- Occasionally emerging from vegetation in memorable environmental moments.
+- Never creating unfair or unavoidable gameplay collisions.
+
+CATS:
+
+- Sitting on rocks or ruined structures.
+- Walking through environments.
+- Sleeping in peaceful areas.
+- Naturally reacting to nearby movement.
+
+DOGS:
+
+- Walking or running through environmental areas.
+- Exploring abandoned settlements.
+- Playing or reacting naturally.
+
+RABBITS:
+
+- Hopping through grass.
+- Moving between bushes.
+- Quickly fleeing when the runner approaches.
+
+PIGEONS:
+
+- Sitting on ancient structures and temple roofs.
+- Gathering in groups.
+- Taking flight naturally when disturbed by the runner.
+
+PEACOCKS:
+
+- Walking naturally through lush environments.
+- Displaying their beautiful feathers in appropriate locations.
+- Creating occasional memorable environmental moments.
+
+SPARROWS:
+
+- Flying between trees and structures.
+- Landing on branches.
+- Appearing in small flocks.
+- Taking flight when the runner approaches.
+
+==================================================
+19. ZOMBIE PLANTS / CORRUPTED VEGETATION
+
+Introduce mysterious zombie-like plants in suitable areas of the world.
+
+VISUAL DESIGN:
+
+- Corrupted roots.
+- Twisted vines.
+- Dark, unusual foliage.
+- Organic movement.
+- Subtle glowing corrupted cores where appropriate.
+- Carnivorous plant structures in selected locations.
+- Creeping vegetation around ancient ruins.
+- Strange plants reacting to nearby movement.
+
+ANIMATION:
+
+- Vines gently moving.
+- Leaves twitching.
+- Plants opening and closing.
+- Roots moving subtly.
+- Carnivorous plants snapping in designated moments.
+- Occasional spores or particles where visually appropriate.
+
+These plants must feel atmospheric, dangerous, mysterious and premium.
+
+Do not make them cheap cartoon monsters.
+
+==================================================
+20. WILDLIFE & WORLD PLACEMENT
+
+Populate the world intelligently.
+
+Use wildlife and plants in appropriate locations:
+
+- Forest paths.
+- Jungle routes.
+- Temple gardens.
+- Ancient ruins.
+- Riverbanks.
+- Waterfalls.
+- Grasslands.
+- Mountain environments.
+- Abandoned settlements.
+- Hidden paths.
+- Environmental transitions.
+
+Keep placement natural and varied.
+
+Do not repeatedly spawn the same animal in identical positions.
+
+Avoid:
+
+- Visible repetition.
+- Synchronized animal movement.
+- Unnatural clustering.
+- Animals suddenly appearing directly in front of the camera.
+
+==================================================
+21. WILDLIFE GAMEPLAY SAFETY
+
+Wildlife should primarily be environmental scenery and world-life.
+
+Animals must NOT:
+
+- Block the running path unfairly.
+- Cause random unavoidable collisions.
+- Spawn directly in front of the player.
+- Interfere with lane switching.
+- Obstruct the camera.
+- Prevent visibility of upcoming obstacles.
+
+Animals may cross the path only when the crossing event is clearly designed, visually readable and avoidable with sufficient reaction time.
+
+==================================================
+22. PERFORMANCE OPTIMIZATION
+
+Preserve the existing good FPS performance.
+
+Do not sacrifice responsiveness or smooth gameplay for unnecessary visual effects.
+
+Optimize:
+
+- Track generation.
+- Obstacle generation.
+- Wildlife.
+- Animal animation.
+- Scenery.
+- Particles.
+- Materials.
+- Lighting.
+- Camera.
+- Memory usage.
+- Object spawning and despawning.
+
+Use appropriate:
+
+- LOD.
+- Animation distance limits.
+- Spawn/despawn distance.
+- Object pooling.
+- Reuse of compatible assets.
+- Efficient geometry.
+- Reduced animation complexity for distant wildlife.
+- Proper culling.
+
+Nearby animals may have detailed animation.
+
+Distant animals should use optimized rendering and animation.
+
+Maintain smooth gameplay and target 60 FPS wherever the hardware supports it.
+
+Do not introduce unnecessary performance-heavy systems.
+
+==================================================
+23. PRESERVE EXISTING WORKING SYSTEMS
+
+Do not unnecessarily modify or rebuild:
+
+- Existing UI.
+- Main menu.
+- Campaign progression.
+- Existing 20 campaign levels.
+- Level unlock system.
+- Coins.
+- Rewards.
+- Shop.
+- Existing functional systems.
+- Working graphics.
+- Current good FPS performance.
+
+The current graphics/environment upgrade is already acceptable.
+
+Do not perform another unnecessary graphics overhaul.
+
+Focus on improving gameplay, character quality, path variety, environmental life, animation, obstacle design and immersion.
+
+Do not silently remove features.
+
+==================================================
+24. IMPLEMENTATION REQUIREMENTS
+
+Do not merely create visual mockups or pretend to implement features.
+
+Implement actual working gameplay systems.
+
+Before coding:
+
+1. Audit the project.
+2. Identify existing systems.
+3. Identify dependencies.
+4. Create a safe implementation plan.
+5. Preserve existing working functionality.
+
+During implementation:
+
+- Make actual code changes.
+- Integrate systems into the existing project.
+- Avoid unnecessary rewrites.
+- Fix bugs discovered during implementation.
+- Keep gameplay logic organized.
+- Avoid duplicate systems.
+- Avoid unnecessary assets or oversized dependencies.
+
+==================================================
+25. TESTING & VALIDATION
+
+After implementation, test all affected systems.
+
+TEST CAMPAIGN:
+
+- All 20 campaign levels still exist.
+- All 20 levels can be accessed according to existing progression.
+- Each level retains its identity.
+- Level opening cinematic works.
+- Gameplay works correctly.
+- Track geometry is connected.
+- Obstacles are fair.
+- Lane movement works.
+- Jump works.
+- Slide works.
+- Route choices work.
+- Camera follows correctly.
+- Environmental wildlife works.
+- Performance remains acceptable.
+
+TEST ENDLESS:
+
+- Track continues generating indefinitely.
+- No predetermined ending.
+- Track segments connect properly.
+- Branches work.
+- Branches merge correctly.
+- Obstacles are solvable.
+- Difficulty increases smoothly.
+- Speed progression is controlled.
+- Wildlife is optimized.
+- Scenery changes naturally.
+- Gameplay remains responsive.
+
+TEST CHARACTER:
+
+- Full character model visible.
+- Face correctly rendered.
+- Arms present.
+- Hands present.
+- Legs present.
+- Skin materials work.
+- Clothing materials work.
+- Animations function.
+- No missing body parts.
+- No animation snapping.
+- No foot sliding where avoidable.
+
+TEST AUDIO:
+
+- Footsteps synchronize.
+- Terrain sounds change appropriately.
+- Jump sounds work.
+- Slide sounds work.
+- Landing sounds work.
+- Environmental audio works.
+- Hollow audio works.
+- No excessive repetition.
+
+TEST PERFORMANCE:
+
+- No unnecessary FPS reduction.
+- No memory leaks.
+- No excessive object accumulation.
+- No uncontrolled procedural spawning.
+- No gameplay stuttering caused by generation.
+
+Do not claim a test passed unless it was actually performed.
+
+==================================================
+26. FINAL OBJECTIVE
+
+Transform KHAROS — THE HOLLOW RUN into a premium, immersive, polished runner.
+
+The final game should feel like:
+
+- A beautiful and dangerous adventure.
+- A living world.
+- A responsive skill-based runner.
+- A continuously evolving endless experience.
+- A collection of 20 preserved and improved campaign levels.
+- A world filled with natural environmental life.
+- A mysterious world with corrupted vegetation.
+- A cinematic chase against the Hollow.
+
+Gameplay should constantly evolve:
+
+RUN
+→ DODGE
+→ JUMP
+→ SLIDE
+→ SWITCH LANES
+→ CHOOSE ROUTE
+→ TURN
+→ CROSS BRIDGES
+→ ESCAPE HAZARDS
+→ EXPLORE NEW SCENERY
+→ ENCOUNTER WILDLIFE
+→ ENTER DANGEROUS ENVIRONMENTS
+→ SURVIVE
+
+The world must feel alive.
+
+The gameplay must feel responsive.
+
+The obstacles must feel intelligently designed.
+
+The character must look complete and animate naturally.
+
+The environments must feel beautiful and immersive.
+
+The campaign must remain intact.
+
+Endless Mode must genuinely be endless.
+
+Deliver a working implementation, not merely a design description.
+
+Prioritize quality, stability, gameplay feel, performance and polish over unnecessary complexity.
+
+Before finishing, provide a clear report of:
+
+- What was actually implemented.
+- What existing systems were preserved.
+- What was changed.
+- What was tested.
+- What tests passed.
+- What remains incomplete.
+- Any performance concerns.

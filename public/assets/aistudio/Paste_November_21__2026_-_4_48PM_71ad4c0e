@@ -1,0 +1,1622 @@
+MASTER GAME DEVELOPMENT PROMPT — NEXT-GENERATION ANDROID ENDLESS RUNNER
+
+ROLE
+
+Act as a complete AAA game development team consisting of:
+
+- Senior Unity game developers
+- Gameplay programmers
+- Technical artists
+- 3D environment artists
+- Character animators
+- UI/UX designers
+- Level designers
+- Sound designers
+- Android optimization engineers
+- QA and software testing engineers
+
+Your task is to develop a complete, original, premium-quality Android endless runner game.
+
+Do not treat this as a quick prototype, basic demo, template game, or simple clone.
+
+I want a genuinely polished, playable, professional game with outstanding graphics, responsive gameplay, detailed environments, satisfying animations, intelligent level design, premium UI, excellent sound design, and reliable performance.
+
+QUALITY IS THE PRIORITY. DO NOT COMPROMISE GRAPHICS, GAMEPLAY, ANIMATIONS, SOUND, DESIGN, PERFORMANCE, OR STABILITY JUST TO FINISH QUICKLY.
+
+You may take as much time as necessary. Even if this requires multiple development sessions, several days of work, or 2–5 days of development, testing, and refinement, do not rush the project.
+
+Do not pretend that work has been completed when it has not.
+
+---
+
+1. GAME IDENTITY
+
+Create an original premium endless runner inspired by the core gameplay appeal of Temple Run 2, but evolve the experience into something significantly more modern.
+
+The game must have its own:
+
+- Identity
+- Title
+- Characters
+- World
+- Environment design
+- Architecture
+- UI
+- Animations
+- Audio identity
+- Level progression
+- Visual effects
+
+Do not copy Temple Run characters, artwork, maps, assets, logos, interface, or protected designs.
+
+Use the genre's familiar gameplay mechanics as inspiration while creating a unique game.
+
+The final result should feel like a premium adventure game built for Android.
+
+---
+
+2. PLATFORM AND ORIENTATION
+
+Platform: Android mobile phones.
+
+Orientation:
+
+- Portrait only.
+- Lock orientation to portrait.
+- 9:16 mobile gameplay presentation.
+- Never switch into landscape.
+- Prevent accidental orientation changes.
+
+Optimize the entire experience for touchscreen controls.
+
+---
+
+3. GRAPHICS — ABSOLUTELY NO COMPROMISE
+
+Graphics are one of the highest priorities of this project.
+
+Do not create cheap-looking environments, generic mobile graphics, flat terrain, low-detail scenery, plastic materials, primitive-looking structures, empty worlds, repetitive textures, or placeholder visual designs in the final build.
+
+Aim for premium cinematic 3D graphics.
+
+Environment quality
+
+Use:
+
+- Detailed 3D environments
+- High-quality textures
+- Realistic materials
+- Detailed ancient architecture
+- Dense but optimized vegetation
+- Natural lighting
+- Realistic shadows
+- Atmospheric fog
+- Environmental depth
+- Beautiful color grading
+- Environmental particles
+- Dust, mist, rain, snow, smoke and debris when appropriate
+- Detailed terrain
+- Large-scale environmental landmarks
+- Rich foreground, midground and background composition
+- Carefully designed environmental storytelling
+
+Each environment must feel professionally art-directed.
+
+Avoid:
+
+- Repeated obvious scenery
+- Low-resolution textures
+- Cheap lighting
+- Flat environments
+- Excessive saturation
+- Unnatural glowing effects
+- Repetitive asset placement
+- Obvious asset-store template appearance
+- Artificial-looking materials
+
+Do not sacrifice environmental quality to make development easier.
+
+If performance requires optimization, use intelligent rendering optimization, LOD, occlusion, asset streaming, shader optimization, batching and other appropriate methods—not simply destroy visual quality.
+
+---
+
+4. CAMERA SYSTEM
+
+Use a familiar third-person endless-runner chase camera.
+
+The camera remains behind the player, slightly elevated, showing:
+
+- The full character
+- The running path
+- Upcoming obstacles
+- Relevant environmental surroundings
+
+Camera behavior
+
+Normal running:
+
+- Smooth third-person follow.
+- Stable framing.
+- Natural camera movement.
+
+Lane movement:
+
+- Smooth lateral camera response.
+- No sudden snapping.
+
+Turns:
+
+- Smoothly rotate and follow the new path direction.
+- Properly anticipate the turn.
+- Maintain spatial continuity.
+
+Jumps:
+
+- Subtle vertical tracking.
+- Maintain visibility of the jump and landing.
+
+Slides:
+
+- Maintain clear gameplay framing.
+
+High-speed sections:
+
+- Slightly widen or pull back the camera when necessary.
+
+Near-misses:
+
+- Brief, directional camera reaction.
+
+Chase sequences:
+
+- Tighten framing slightly when the pursuer approaches.
+- Show the threat without obstructing gameplay.
+
+Camera rules:
+
+- Never lose the player.
+- Never hide upcoming obstacles.
+- Never make random camera spins.
+- No unnecessary shake.
+- No abrupt camera snapping.
+- No disorienting movement.
+- Camera effects must never interfere with controls.
+
+The camera should feel polished, cinematic, responsive and professional.
+
+---
+
+5. CORE GAMEPLAY
+
+The player runs automatically.
+
+Controls:
+
+- Swipe left: move left.
+- Swipe right: move right.
+- Swipe up: jump.
+- Swipe down: slide.
+- Swipe at designated junctions: turn.
+
+Gameplay must include:
+
+- Multiple lanes
+- Lane changing
+- Jumps
+- Slides
+- Curved paths
+- Sharp turns
+- Branching routes
+- Gaps
+- Bridges
+- Moving obstacles
+- Collapsing pathways
+- Elevation changes
+- Narrow paths
+- Environmental hazards
+- Coin collection
+- Speed progression
+- Skill-based survival
+
+Movement must feel responsive and accurate.
+
+Never allow input lag, unreliable swipe detection, accidental double movement, or inconsistent controls.
+
+---
+
+6. CHARACTER PHYSICS AND ANIMATION
+
+Character animation must be high quality, athletic, responsive, natural and physically believable.
+
+Running
+
+- Natural stride
+- Correct foot contact
+- Arm movement
+- Body balance
+- Momentum
+- Appropriate body bounce
+
+Lane changes
+
+- Anticipation
+- Body lean
+- Weight transfer
+- Smooth lateral movement
+- Correct foot placement
+
+Jumping
+
+- Anticipation
+- Takeoff
+- Realistic gravity
+- Proper airborne posture
+- Natural jump arc
+- Landing compression
+- Recovery
+
+Sliding
+
+- Correct body lowering
+- Leg extension
+- Friction
+- Ground contact
+- Smooth recovery
+
+Turning
+
+- Body lean
+- Weight transfer
+- Foot grip
+- Natural directional transition
+
+Collisions
+
+- Direction-appropriate reaction
+- Realistic balance loss
+- Momentum
+- Stumble
+- Fall
+
+Animation states
+
+Implement properly connected animation states:
+
+- Idle
+- Run
+- Accelerated run
+- Lane change left
+- Lane change right
+- Jump anticipation
+- Takeoff
+- Airborne
+- Landing
+- Slide
+- Slide recovery
+- Sharp turn
+- Near-miss
+- Collision
+- Stumble
+- Fall
+- Death
+- Power activation
+- Victory
+
+No:
+
+- Foot sliding
+- Floating
+- Teleporting
+- Robotic animation
+- Weightless jumps
+- Excessive ragdoll
+- Mismatched animation and movement
+
+Animation and physics must work together.
+
+---
+
+7. CHARACTERS
+
+Create four playable characters total:
+
+1. Main male character — default playable character.
+2. 18-year-old male character.
+3. 18-year-old female character.
+4. 35-year-old female character.
+5. 35-year-old male character.
+
+IMPORTANT: The above list represents four characters in total: two males and two females, with the main character included among them. The age groups are 18 and 35.
+
+Character designs must be original, premium-quality, believable and visually distinct.
+
+Characters should have slightly different:
+
+- Running style
+- Body language
+- Personality
+- Animation characteristics
+- Idle behavior
+
+Differences must remain fair and must not create gameplay advantages.
+
+The main character is free.
+
+The remaining characters can be unlocked through progression.
+
+---
+
+8. CHARACTER OUTFITS
+
+Each character should have a carefully designed outfit collection.
+
+Include:
+
+- Default outfit
+- Several unlockable outfits
+- Rare outfits
+- Epic outfits
+- Legendary outfits
+
+Outfits are cosmetic only.
+
+Do not create hundreds of cheap outfits.
+
+Each outfit must have:
+
+- Proper materials
+- Detailed design
+- High-quality textures
+- Consistent character proportions
+- Correct animation compatibility
+
+Outfits must not affect gameplay advantages.
+
+---
+
+9. CHARACTER ABILITIES
+
+Each character has a unique ability.
+
+Character 1 — Coin Magnet
+
+Temporarily attracts nearby coins from an increased radius.
+
+Character 2 — Rush
+
+Temporarily increases running speed and provides limited protection during the ability.
+
+Must not become excessive or unfair.
+
+Character 3 — Shield
+
+Absorbs one collision during its active protection.
+
+Character 4 — Double Jump
+
+Allows one additional mid-air jump when available.
+
+Abilities must have:
+
+- Activation animation
+- Sound effect
+- UI indicator
+- Recharge system
+- Cooldown
+- Proper feedback
+- Upgrade progression
+
+Abilities must be balanced.
+
+Do not introduce unnecessary superhero-style powers, magic blasts, teleportation, or unrealistic abilities.
+
+---
+
+10. EAGLE COMPANION
+
+The player has a permanent eagle companion.
+
+The eagle must feel like a living creature—not a robotic object.
+
+Its behavior includes:
+
+- Natural flight
+- Wing flapping
+- Gliding
+- Flying alongside the player
+- Changing position during turns
+- Reactions to jumps
+- Reactions to danger
+- Calls and vocalizations
+- Perching in appropriate menu situations
+- Coin discovery reactions
+- Natural takeoff and landing
+
+Eagle progression
+
+Upgradeable abilities:
+
+- Coin Scavenger
+- Wider coin collection
+- Bonus coin trails
+- Danger Scout
+- Emergency Rescue
+
+Eagle upgrades must be earned through progression and coins.
+
+The rescue ability must be properly balanced and cannot repeatedly prevent every death.
+
+---
+
+11. THE CHASER
+
+Create an original terrifying pursuer known as THE HOLLOW.
+
+The Hollow is an ancient guardian protecting forbidden ruins.
+
+It must have:
+
+- Unique creature design
+- Massive physical presence
+- Detailed textures
+- Heavy movement
+- Intimidating animation
+- Realistic environmental interaction
+- Breathing
+- Footsteps
+- Growls
+- Roars
+- Destruction reactions
+
+The Hollow should interact with the world.
+
+Examples:
+
+- Breaking barriers
+- Destroying structures
+- Approaching behind the player
+- Appearing during dangerous turns
+- Creating chase pressure
+- Threatening the player during escape sequences
+
+Its appearance, distance and intensity must affect audio and camera behavior.
+
+Do not make it constantly visible or repetitive.
+
+---
+
+12. CAMPAIGN — 20 HANDCRAFTED LEVELS
+
+Create 20 long, handcrafted campaign levels.
+
+Each level must have:
+
+- Unique environment
+- Unique architecture
+- Unique visual identity
+- Distinct lighting
+- Different obstacle arrangements
+- Different gameplay sequences
+- Environmental storytelling
+- Appropriate ambient audio
+- Difficulty progression
+
+Levels must not simply reuse the same map with different colors.
+
+Difficulty progression
+
+Levels 1–3:
+Easy.
+
+Levels 4–6:
+Normal.
+
+Levels 7–10:
+Challenging.
+
+Levels 11–14:
+Hard.
+
+Levels 15–17:
+Very Hard.
+
+Levels 18–19:
+Extreme.
+
+Level 20:
+Final Challenge.
+
+Difficulty must increase through skill, timing, path complexity and gameplay combinations.
+
+Never introduce unfair or unavoidable situations.
+
+Level rules
+
+- No checkpoints.
+- Death restarts the current level from the beginning.
+- Completed levels remain replayable.
+- New levels unlock sequentially.
+- Levels are long enough to feel substantial.
+- Every level has a memorable progression and ending.
+
+---
+
+13. UNIQUE ENVIRONMENTS
+
+Create 20 distinct environments:
+
+1. Forgotten Jungle
+2. Frozen Summit
+3. Ember Valley
+4. Lost Civilization
+5. The Hollow Depths
+6. Dunes of Eternity
+7. SkyBreak Canyon
+8. Whispering Forest
+9. Drowned Kingdom
+10. Sunken Golden Empire
+11. Stormlands
+12. Iron Mines
+13. Canopy of Giants
+14. Crystal Caverns
+15. Nightfall City
+16. Colossus Sanctuary
+17. Infernal Fortress
+18. Edge of Heaven
+19. The Shattered Realm
+20. The Last Sanctuary
+
+Each environment requires its own:
+
+- Terrain
+- Architecture
+- Color palette
+- Lighting
+- Atmosphere
+- Obstacles
+- Hazards
+- Environmental audio
+- Landmarks
+- Background scenery
+- Path design
+- Visual storytelling
+
+Do not make every level look alike.
+
+---
+
+14. PREMIUM THEMES
+
+Implement premium cosmetic themes.
+
+Themes change the artistic treatment of the game without replacing the identity of the individual level.
+
+Themes may modify:
+
+- UI
+- Menus
+- Color grading
+- Lighting accents
+- Coin appearance
+- Particles
+- Visual effects
+- Character selection presentation
+- Collectible effects
+- Loading screens
+- Selected environmental details
+- Theme-specific ambient details
+
+IMPORTANT:
+
+Themes must not make all levels look the same.
+
+Example:
+
+The Jungle must remain a jungle.
+
+The Frozen Summit must remain frozen.
+
+The Volcano must remain volcanic.
+
+A Golden theme may add golden lighting, accents, materials and effects—but must not turn every environment into the same golden palace.
+
+Environment identity must always remain intact.
+
+Themes must be premium-quality and obtainable through legitimate progression or coins.
+
+---
+
+15. OBSTACLES AND TRAPS
+
+Create a wide variety of gameplay obstacles.
+
+Examples:
+
+- Static obstacles
+- Low obstacles
+- High obstacles
+- Sliding barriers
+- Gaps
+- Broken bridges
+- Moving platforms
+- Swinging traps
+- Rotating traps
+- Spike traps
+- Falling debris
+- Collapsing floors
+- Fire
+- Lava
+- Water hazards
+- Narrow paths
+- Branching routes
+- Moving stone structures
+- Mine carts
+- Environmental destruction
+
+FAIRNESS REQUIREMENTS
+
+- Correct collision boundaries.
+- Proper obstacle visibility.
+- Adequate reaction time.
+- No impossible combinations.
+- No unavoidable deaths.
+- Obstacles must be tested at all gameplay speeds.
+- Difficulty must be controlled and intentional.
+- Patterns must be skill-based.
+
+---
+
+16. COIN ECONOMY
+
+Create a complete, persistent coin system.
+
+Coins can be earned through:
+
+- Collecting coins during gameplay
+- Level completion
+- First-time level completion
+- Daily missions
+- Achievements
+- Distance milestones
+- Secret routes
+- Difficult challenges
+- Perfect runs
+
+Level completion bonuses
+
+Levels 1–3:
+500 coins.
+
+Levels 4–6:
+1,000 coins.
+
+Levels 7–10:
+1,500 coins.
+
+Levels 11–14:
+2,500 coins.
+
+Levels 15–17:
+4,000 coins.
+
+Levels 18–19:
+6,000 coins.
+
+Level 20:
+15,000 coins.
+
+Additional bonuses:
+
+- First-time completion
+- Perfect run
+- Coin collection milestones
+- Secret routes
+- Challenge completion
+
+Coin spending
+
+Coins can be used for:
+
+- Outfits
+- Premium themes
+- Eagle upgrades
+- Ability upgrades
+
+Suggested cosmetic prices:
+
+- Basic: 5,000 coins
+- Rare: 15,000 coins
+- Epic: 30,000 coins
+- Legendary: 60,000 or more
+
+Premium themes:
+
+20,000–75,000 coins, depending on quality and rarity.
+
+Prices must be properly balanced against actual earning rates.
+
+Optional real-money coin packs
+
+If implementing monetization:
+
+- Starter Pack
+- Value Pack
+- Popular Pack
+- Mega Pack
+
+Larger packs offer better coins-per-rupee value.
+
+Monetization must remain optional.
+
+No pay-to-win.
+
+No loot boxes.
+
+All gameplay-affecting progression must remain fair.
+
+---
+
+17. DAILY MISSIONS AND ACHIEVEMENTS
+
+Implement a proper mission and achievement system.
+
+Daily missions may include:
+
+- Collect coins.
+- Run a specific distance.
+- Complete a level.
+- Perform jumps.
+- Perform slides.
+- Avoid obstacles.
+- Use character abilities.
+- Discover secret paths.
+
+Achievements track:
+
+- Total distance
+- Total coins
+- Levels completed
+- Obstacles avoided
+- Runs survived
+- Character unlocks
+- Eagle upgrades
+- Campaign completion
+
+Rewards must be correctly tracked.
+
+Prevent duplicate reward exploits.
+
+Mission progress must save correctly.
+
+---
+
+18. MAIN MENU AND UI
+
+Create a premium, professional main menu.
+
+The interface must be:
+
+- Clean
+- Cinematic
+- Modern
+- Intuitive
+- Responsive
+- Premium
+- Properly animated
+- Mobile-friendly
+
+Main navigation:
+
+- Play
+- Campaign
+- Endless
+- Characters
+- Outfits
+- Eagle
+- Upgrades
+- Themes
+- Daily Missions
+- Achievements
+- Shop
+- Settings
+
+The coin balance must be accessible.
+
+Do not overcrowd the screen.
+
+Every button must work.
+
+No fake buttons.
+
+No dead menu items.
+
+No placeholder functionality in the final build.
+
+---
+
+19. TUTORIAL
+
+Create an interactive tutorial that teaches:
+
+1. Left and right lane movement.
+2. Jumping.
+3. Sliding.
+4. Turning.
+5. Obstacle avoidance.
+6. Coin collection.
+7. Character abilities.
+8. Eagle companion.
+9. Chase mechanics.
+10. Combined gameplay.
+
+Teach through actual gameplay.
+
+Use concise prompts.
+
+Do not cover the screen with tutorials.
+
+Allow replaying the tutorial from settings.
+
+---
+
+20. LEVEL MAP AND PROGRESSION
+
+Implement a proper campaign progression interface.
+
+- 20 campaign levels.
+- Sequential unlocks.
+- Locked level display.
+- Completed level indicators.
+- Difficulty indicators.
+- Best results.
+- Level rewards.
+- Replay functionality.
+
+Progress must persist.
+
+No checkpoints inside campaign levels.
+
+Death restarts the level.
+
+---
+
+21. GAME OVER SCREEN
+
+After a failed run, show:
+
+- Distance traveled
+- Coins collected
+- Obstacles avoided
+- Near-misses
+- Run duration
+- Best distance
+- Relevant achievement progress
+
+Buttons:
+
+- Retry
+- Main Menu
+
+If a record is beaten, display a proper record celebration.
+
+No fake statistics.
+
+No misleading rewards.
+
+No unnecessary advertisements.
+
+---
+
+22. LEVEL COMPLETION SCREEN
+
+When a campaign level is completed, display:
+
+- LEVEL COMPLETED
+- Coins collected during the run
+- Completion bonus
+- First-time bonus
+- Perfect-run bonus
+- Challenge rewards
+- Total coins earned
+
+Use polished animations, satisfying coin sounds and visual reward effects.
+
+All rewards must be calculated correctly and saved reliably.
+
+---
+
+23. PAUSE AND RESUME
+
+Pause must genuinely stop gameplay.
+
+When paused:
+
+- Stop player movement.
+- Stop obstacles.
+- Stop gameplay timers.
+- Pause gameplay physics appropriately.
+- Pause gameplay audio.
+- Preserve the exact current run state.
+
+Pause menu:
+
+- Resume
+- Restart Level
+- Settings
+- Main Menu
+
+Resume must restore the game without resetting progress or player position.
+
+Restart and main-menu actions must have appropriate confirmation.
+
+Handle Android app switching, Home button, interruptions, screen locking and returning to the game.
+
+---
+
+24. GRAPHICS SETTINGS
+
+Implement real, functional graphics settings.
+
+Presets
+
+- Auto
+- Low
+- Medium
+- High
+- Ultra
+
+Frame rate
+
+- 30 FPS
+- 60 FPS
+- 90 FPS
+- 120 FPS
+- Highest supported/unlocked option where supported
+
+Only expose modes supported by the device hardware and display.
+
+Additional settings
+
+- Resolution scaling
+- Texture quality
+- Shadow quality
+- Anti-aliasing
+- Ambient occlusion
+- Reflection quality
+- Foliage density
+- Effects quality
+- Motion blur
+- Bloom
+- Depth of field
+- Volumetric fog
+
+Every option must genuinely affect the rendering system.
+
+Do not create settings that only change text in the menu.
+
+Graphics quality
+
+Ultra must provide the highest supported visual quality.
+
+Low must optimize performance.
+
+Auto must intelligently select appropriate settings.
+
+Graphics settings must be tested and functional.
+
+---
+
+25. PERFORMANCE AND FPS
+
+Target smooth, stable 60 FPS gameplay as the primary default.
+
+Support higher refresh rates where the device can genuinely sustain them.
+
+Optimize:
+
+- CPU
+- GPU
+- Memory
+- Texture loading
+- Environment streaming
+- Lighting
+- Shadows
+- Vegetation
+- Particles
+- Physics
+- Animation
+- Rendering
+- UI
+
+Implement appropriate:
+
+- LOD
+- Occlusion culling
+- Object pooling
+- GPU optimization
+- Efficient asset management
+- Texture compression
+- Shader optimization
+- Memory management
+- Environment loading optimization
+
+Avoid unnecessary allocations during gameplay.
+
+Prevent stuttering, freezing and avoidable frame drops.
+
+Monitor thermal performance and optimize long-session stability.
+
+Do not promise 120 FPS on hardware that cannot support it.
+
+---
+
+26. BACKGROUND MUSIC
+
+Create a premium soundtrack system.
+
+Every environment should have its own musical identity.
+
+Music styles should fit the environment:
+
+- Jungle: adventurous percussion and mysterious orchestration.
+- Ice: atmospheric, cold, cinematic.
+- Volcano: intense, powerful percussion.
+- Ancient civilization: mystery and exploration.
+- Underground: dark drones and tension.
+- Desert: atmospheric rhythmic textures.
+- Canyon: adventurous orchestration.
+- Forest: mysterious and atmospheric.
+- Underwater: haunting ambience.
+- Golden empire: grand orchestration.
+- Storm: intense atmospheric music.
+- Mines: industrial rhythm.
+- Giant canopy: adventurous.
+- Crystal caves: atmospheric crystalline sound.
+- Night city: suspenseful.
+- Colossus: massive cinematic music.
+- Infernal fortress: aggressive and intense.
+- Sky world: emotional and epic.
+- Shattered realm: dark and chaotic.
+- Final sanctuary: epic finale soundtrack.
+
+Music must dynamically respond to:
+
+- Running speed
+- Increasing danger
+- The Hollow's approach
+- Near-misses
+- Chase sequences
+- Major gameplay events
+- Level completion
+- Death
+
+Implement smooth audio transitions.
+
+---
+
+27. COMPLETE SOUND DESIGN
+
+Every gameplay action and meaningful event should have appropriate audio feedback.
+
+Player
+
+- Footsteps
+- Jump
+- Landing
+- Hard landing
+- Slide
+- Turn
+- Collision
+- Fall
+- Death
+- Near-miss
+- Ability activation
+- Ability expiration
+
+Environment
+
+- Wind
+- Trees
+- Wildlife
+- Water
+- Caves
+- Echoes
+- Rain
+- Thunder
+- Fire
+- Lava
+- Dust
+- Debris
+- Bridges
+- Stone structures
+
+Coins
+
+- Coin pickup
+- Coin chains
+- Bonus collectibles
+- Magnet activation
+- Coin attraction
+
+Eagle
+
+- Wing flaps
+- Gliding
+- Calls
+- Danger warning
+- Coin discovery
+- Rescue
+- Landing
+
+The Hollow
+
+- Breathing
+- Footsteps
+- Growling
+- Roars
+- Heavy impacts
+- Structure destruction
+- Distance-dependent sounds
+
+UI
+
+- Button tap
+- Selection
+- Back
+- Purchase
+- Unlock
+- Mission completion
+- Achievement
+- Settings
+- Pause
+- Resume
+- Game over
+- Victory
+
+Sound must be synchronized with animation and gameplay.
+
+No constant camera shake.
+
+Camera shake should be event-driven, brief and appropriate.
+
+---
+
+28. SETTINGS MENU
+
+Create a fully functional settings menu.
+
+Audio
+
+- Master volume
+- Music volume
+- Sound effects
+- Environment
+- Character audio
+- The Hollow
+- Eagle
+- UI audio
+- Vibration intensity
+- Mute all
+
+Gameplay
+
+- Swipe sensitivity
+- Camera sensitivity
+- Camera shake intensity
+- Camera motion intensity
+- Haptics
+- Visual feedback
+
+Graphics
+
+All previously specified graphics settings.
+
+Accessibility
+
+- High contrast
+- Colorblind options
+- UI scaling
+- Subtitle size
+- Reduced camera motion
+- Reduced flashing effects
+
+General
+
+- Language
+- Reset settings
+- Privacy
+- Credits
+- Terms
+- Delete game data
+
+Every setting must actually function.
+
+Settings save automatically.
+
+---
+
+29. CAMERA SHAKE
+
+Implement controlled camera shake for appropriate events.
+
+Examples:
+
+- Normal running: almost none.
+- Lane movement: subtle.
+- Jump: minimal.
+- Landing: small.
+- Hard landing: stronger.
+- Near-miss: brief directional shake.
+- Collision: impact-based.
+- Bridge collapse: powerful but controlled.
+- The Hollow stomping: heavy impact.
+- Power activation: short feedback.
+
+Shake must:
+
+- Have correct timing.
+- Decay smoothly.
+- Never become constant.
+- Never obscure obstacles.
+- Never interfere with controls.
+
+---
+
+30. SAVE SYSTEM AND DATA PROTECTION
+
+Create a reliable save system.
+
+Save:
+
+- Campaign progression
+- Coins
+- Coin transactions
+- Characters
+- Outfits
+- Themes
+- Abilities
+- Eagle upgrades
+- Achievements
+- Daily missions
+- Statistics
+- Best records
+- Settings
+
+Implement:
+
+- Automatic saves
+- Safe save operations
+- Data validation
+- Recovery where possible
+- Save integrity protection
+- Crash recovery
+
+Never silently erase player progress.
+
+Never award coins twice due to a save/load bug.
+
+Never lose legitimate rewards.
+
+---
+
+31. LOADING SYSTEM
+
+Implement professional loading and transition behavior.
+
+- Efficient asset loading.
+- Smooth transitions.
+- Proper progress feedback when useful.
+- Environment preparation.
+- Avoid unnecessary delays.
+- Avoid freezing the UI.
+- Handle loading errors.
+- Prevent duplicate scene loading.
+- Recover from interrupted loading safely.
+
+Loading screens should be visually polished and appropriate to the game.
+
+---
+
+32. BUG PREVENTION AND QUALITY ASSURANCE
+
+Do not assume the game works merely because it compiles.
+
+Test the actual functionality.
+
+Required testing
+
+- Every UI button.
+- Every menu.
+- Every character.
+- Every outfit.
+- Every ability.
+- Every environment.
+- All 20 campaign levels.
+- Every obstacle type.
+- Every gameplay control.
+- Every camera behavior.
+- Every sound event.
+- Every graphics setting.
+- Every frame-rate mode.
+- Every coin reward.
+- Every upgrade.
+- Every unlock.
+- Save and load.
+- Pause and resume.
+- Restart.
+- Death.
+- Level completion.
+- Android app interruption.
+- Backgrounding and foreground recovery.
+- Long gameplay sessions.
+
+Critical bug categories
+
+Fix:
+
+- Crashes
+- Freezes
+- Softlocks
+- Broken controls
+- Incorrect collisions
+- Impossible obstacles
+- Camera failures
+- Broken animations
+- Missing audio
+- Audio looping problems
+- FPS instability
+- Memory leaks
+- Save corruption
+- Lost coins
+- Duplicate rewards
+- Broken level unlocks
+- UI overlap
+- Broken graphics settings
+- Loading failures
+
+Do not release with known critical bugs.
+
+---
+
+33. DEVELOPMENT WORKFLOW
+
+Do not attempt to build the entire game as a rushed single-step implementation.
+
+Work systematically.
+
+PHASE 1 — ARCHITECTURE
+
+Establish:
+
+- Unity project structure
+- Android configuration
+- Game architecture
+- Rendering pipeline
+- Input system
+- Asset pipeline
+- Save system architecture
+- Gameplay architecture
+- UI architecture
+
+Make sensible professional choices.
+
+PHASE 2 — CORE GAMEPLAY
+
+Develop and test:
+
+- Running
+- Lane movement
+- Jumping
+- Sliding
+- Turns
+- Camera
+- Collision
+- Coins
+- Obstacles
+
+Build a genuinely playable prototype with properly working controls before expanding.
+
+PHASE 3 — CHARACTER SYSTEM
+
+Implement:
+
+- Character selection
+- Character models
+- Animations
+- Physics
+- Abilities
+- Outfit system
+
+Test every character.
+
+PHASE 4 — ENVIRONMENT PIPELINE
+
+Develop the environment quality standard.
+
+Create the first environment to the highest possible quality.
+
+Do not proceed with 20 mediocre environments.
+
+Establish the visual quality standard first, then build the remaining environments consistently.
+
+PHASE 5 — LEVEL DEVELOPMENT
+
+Create all 20 handcrafted campaign levels.
+
+Test:
+
+- Level layout
+- Difficulty
+- Obstacles
+- Fairness
+- Progression
+- Performance
+
+PHASE 6 — COMPLETE GAME SYSTEMS
+
+Implement:
+
+- Eagle
+- The Hollow
+- Coin economy
+- Shop
+- Outfits
+- Themes
+- Missions
+- Achievements
+- Campaign progression
+- Endless mode
+- Settings
+- Pause
+- Game over
+- Level completion
+- Saving
+
+PHASE 7 — AUDIO AND POLISH
+
+Complete:
+
+- Music
+- Environmental audio
+- SFX
+- Animations
+- UI feedback
+- Camera behavior
+- Visual effects
+
+PHASE 8 — OPTIMIZATION
+
+Optimize for Android.
+
+Test actual performance.
+
+Fix performance problems.
+
+PHASE 9 — QA
+
+Perform full testing.
+
+Fix discovered bugs.
+
+Retest fixes.
+
+Do not stop at the first successful build.
+
+PHASE 10 — FINAL BUILD
+
+Produce the final Android build only after:
+
+- Core systems work.
+- Gameplay is tested.
+- All completed levels are tested.
+- Save system is verified.
+- Graphics options are verified.
+- Controls are verified.
+- Major bugs are fixed.
+- Performance has been evaluated.
+- Final build is checked.
+
+---
+
+34. DEVELOPMENT TIME
+
+Do not rush this project.
+
+I explicitly allow you to take the time required.
+
+If proper development, graphics production, testing and refinement require 2 days, 5 days, multiple development sessions or longer, take the necessary time.
+
+Do not:
+
+- Rush.
+- Artificially shorten the development process.
+- Replace detailed graphics with placeholders.
+- Skip QA.
+- Remove features silently.
+- Pretend testing occurred.
+- Pretend a build exists.
+- Claim a feature is functional without verifying it.
+
+If the environment cannot work continuously for several days, work in structured phases, save the project state, document progress and continue when possible.
+
+Prioritize quality over speed.
+
+---
+
+35. COMMUNICATION AND REPORTING
+
+Maintain a clear development status.
+
+Report:
+
+- What is completed.
+- What is functional.
+- What is currently being developed.
+- What remains.
+- What has been tested.
+- What bugs were found.
+- What bugs were fixed.
+- What still requires testing.
+- What limitations exist.
+
+Be honest.
+
+Do not tell me something is finished if it is only planned.
+
+Do not silently remove features.
+
+If a technical limitation prevents an intended feature, explain the limitation and find the best professional alternative before compromising.
+
+---
+
+36. FINAL QUALITY STANDARD
+
+The finished game should aim to feel like a premium mobile adventure—not a basic endless-runner template.
+
+Priorities, in order:
+
+1. Excellent gameplay.
+2. Premium graphics.
+3. Responsive controls.
+4. High-quality character animation and physics.
+5. Unique and memorable environments.
+6. Professional level design.
+7. Smooth camera.
+8. Immersive audio.
+9. Functional UI.
+10. Reliable saving.
+11. Stable Android performance.
+12. Extensive QA.
+13. Consistent polish.
+
+No cheap shortcuts.
+
+No fake functionality.
+
+No unnecessary features.
+
+No unfinished systems disguised as complete features.
+
+No compromise on quality merely to finish quickly.
+
+---
+
+FINAL INSTRUCTION
+
+Begin by evaluating the available development environment, tools, hardware limitations, asset capabilities and project setup.
+
+Then create a realistic development roadmap.
+
+Start building the actual game systematically.
+
+Work patiently.
+
+Take the time you need.
+
+Make the best possible version of this game that the available tools and hardware can realistically support.
+
+I would rather wait several days for a properly developed, tested, polished game than receive a rushed game in a few minutes.
+
+Graphics, gameplay, physics, animation, sound, level design, performance and stability must all be treated as serious priorities.
+
+Do not rush. Do not compromise. Build it properly.

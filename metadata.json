@@ -1,0 +1,8 @@
+{
+  "name": "Kharos: The Hollow Run",
+  "description": "A next-generation 3D portrait endless runner featuring 20 handcrafted realms, four unique explorers, an eagle companion, and The Hollow pursuer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
