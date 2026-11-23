@@ -1,4 +1,3 @@
-
 name: KHAROS Android APK
 
 on:
@@ -30,10 +29,10 @@ jobs:
           java-version: 21
 
       - name: Install project dependencies
-        run: run: npm install --legacy-peer-deps
+        run: npm install --legacy-peer-deps
 
       - name: Install Capacitor
-        run: npm install @capacitor/core @capacitor/android @capacitor/cli
+        run: npm install @capacitor/core @capacitor/android @capacitor/cli --legacy-peer-deps
 
       - name: Create Capacitor configuration
         run: |
